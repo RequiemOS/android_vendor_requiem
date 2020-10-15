@@ -16,12 +16,12 @@
 # -----------------------------------------------------------------
 # Lineage OTA update package
 
-LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/lineage-$(LINEAGE_VERSION).zip
+REQUIEM_TARGET_PACKAGE := $(PRODUCT_OUT)/RequiemOS-vS2-MIRZAPUR$(REQUIEM_VERSION).zip
 
 MD5 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/md5sum
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(LINEAGE_TARGET_PACKAGE)
-	$(hide) $(MD5) $(LINEAGE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(LINEAGE_TARGET_PACKAGE).md5sum
-	@echo "Package Complete: $(LINEAGE_TARGET_PACKAGE)" >&2
+	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(REQUIEM_TARGET_PACKAGE)
+	$(hide) $(MD5) $(REQUIEM_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(REQUIEM_TARGET_PACKAGE).md5sum
+	@echo "Package Complete, Kthanxbye: $(REQUIEM_TARGET_PACKAGE)" >&2
