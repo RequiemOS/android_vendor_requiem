@@ -1,4 +1,4 @@
-# Inherit mini common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile.mk)
+# Inherit mini common Requiem stuff
+$(call inherit-product, vendor/requiem/config/common_mobile.mk)
 
 PRODUCT_SIZE := mini
