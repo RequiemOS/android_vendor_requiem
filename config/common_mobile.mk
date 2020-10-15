@@ -22,32 +22,9 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Exchange2
 
-# Lineage packages
+# Requiem packages
 PRODUCT_PACKAGES += \
-    AudioFX \
-    Backgrounds \
-    Eleven \
-    Etar \
-    Jelly \
-    LockClock \
-    Profiles \
-    TrebuchetQuickStep \
-    WeatherProvider
-
-# Accents
-PRODUCT_PACKAGES += \
-    LineageBlackTheme \
-    LineageDarkTheme \
-    LineageBlackAccent \
-    LineageBlueAccent \
-    LineageBrownAccent \
-    LineageCyanAccent \
-    LineageGreenAccent \
-    LineageOrangeAccent \
-    LineagePinkAccent \
-    LineagePurpleAccent \
-    LineageRedAccent \
-    LineageYellowAccent
+   
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -61,9 +38,6 @@ PRODUCT_PACKAGES += \
     libhealthd.lineage
 endif
 
-# Customizations
-PRODUCT_PACKAGES += \
-    LineageNavigationBarNoHint
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
